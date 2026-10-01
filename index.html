@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>專題名稱｜AI 賦能專題</title>
+<meta name="description" content="一句話介紹這個專題解決什麼問題。">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <p class="tag">AI 賦能專題・第 __ 組</p>
+    <h1>專題名稱<span>（例：AI 智慧植物澆灌系統）</span></h1>
+    <p class="lead">一句話介紹：這個系統幫 ____ 解決 ____ 的問題。</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="card">
+    <h2>① 問題定義</h2>
+    <ul>
+      <li><b>誰遇到問題：</b>（例：宿舍養植物的同學）</li>
+      <li><b>現在的困擾：</b>（例：常常忘記澆水，或澆太多）</li>
+      <li><b>成功標準：</b>（例：土壤濕度維持在 40%–70%）</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>② IPO</h2>
+    <div class="ipo">
+      <div><h3>Input 輸入</h3><p>土壤濕度（%）<br>濕度門檻</p></div>
+      <div class="arrow" aria-hidden="true">→</div>
+      <div><h3>Process 處理</h3><p>濕度 &lt; 門檻 → 開水泵<br>否則關水泵</p></div>
+      <div class="arrow" aria-hidden="true">→</div>
+      <div><h3>Output 輸出</h3><p>水泵狀態<br>提示訊息</p></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>③ 互動展示（範例，請改成你們的系統）</h2>
+    <div class="demo">
+      <label for="moist">土壤濕度：<b id="moistVal">55</b> %</label>
+      <input type="range" id="moist" min="0" max="100" value="55">
+      <label for="th">澆水門檻：<b id="thVal">40</b> %</label>
+      <input type="range" id="th" min="10" max="80" value="40">
+      <div id="out" class="out" role="status" aria-live="polite"></div>
+    </div>
+    <p class="note">程式在 <code>js/app.js</code>；Python 版在 <code>python/main.py</code>，邏輯一樣。</p>
+  </section>
+
+  <section class="card">
+    <h2>④ 小組分工</h2>
+    <table>
+      <thead><tr><th>角色</th><th>暱稱</th><th>做了什麼</th></tr></thead>
+      <tbody>
+        <tr><td>🧠 企劃</td><td></td><td></td></tr>
+        <tr><td>🎨 設計</td><td></td><td></td></tr>
+        <tr><td>💻 開發</td><td></td><td></td></tr>
+        <tr><td>🧪 測試</td><td></td><td></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>⑤ AI 協作與反思</h2>
+    <p><b>AI 幫了什麼：</b>（例：列出常見濕度感測器與電壓）</p>
+    <p><b>我們怎麼驗證：</b>（例：查規格表、實測 3 次取平均）</p>
+    <p><b>下一版想改進：</b></p>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <p>🧠 Notion 想清楚 → 📝 Notion 寫下來 → 💻 GitHub 做出來 → 🔄 GitHub 改進它</p>
+  <p><a href="https://pjkuo.github.io/ai-empower/project.html">課程專題工作流</a></p>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
